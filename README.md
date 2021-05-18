@@ -1,5 +1,4 @@
 
-
 Le script `getmadose.sh` scanne chaque 2 sec la page keldoc d'un centre de vaccination et ouvrira la page approprié dans votre navigateur dès qu'un nouveau rdv est détecté.
 
 Pour l'utiliser il faut le télécharger, aller dans le répertoire, puis lancer `sh getmadose.sh`
