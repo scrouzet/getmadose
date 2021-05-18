@@ -24,7 +24,7 @@ Testez là d'abord : pour ceci il faut la copier dans la barre d'adresse du navi
 
 L'urltoparse est la commande API qui va renvoyer des données au format JSON, lesquels sont ensuite affichées par keldoc. Ce sont ces données que l'on va scanner pour détecter des rdv dispos.
 
-![urltoparse via le Web developer tool sur Firefox](Screenshot from 2021-05-18 18-27-32.png)
+![urltoparse via le Web developer tool sur Firefox]("Screenshot from 2021-05-18 18-27-32.png")
 
 1. aller sur l'onglet Network dans les Web Developer Tools affichés en bas de page, recharger la page et cliquer sur les bons critères, etc. A chaque fois que l'on sélectionne une nouvelle valeur pour un champ, une commande GET est envoyée. Vous pouvez les voir apparaitre dans l'onglet. Si vous ne voyez que des POST et pas de GET. Regarder la page (F5) et vous devriez les voir.
 2. prenez la dernière ligne de Method GET, apparue quand vous avez indiqués les bons critères pour vous. En cliquant dessus (simple clique) on obtient une URL de GET qui apparait sur la droite, du type `https://booking.keldoc.com/api/patients/v2/timetables/96875blablabblabla` longue et avec pleins de champs. Ces champs définissent les critères de date (début et fin) et agenda_ids, ça c'est un mystère ce que c'est pour moi mais ça bouge pas on peut les laisser hardcodés comme ça.
