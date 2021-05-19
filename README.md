@@ -16,6 +16,9 @@ L'`$urltoopen` est la page qui sera ouverte automatiquement par le script, et de
 3. clique droit sur ce dernier -> This Frame -> View Frame Info (ceci n'apparait que si vous êtes dans le Web Developer Tools de Firefox)
 4. Dans l'onglet Général, copier l'Adresse, c'est votre `$urltoopen`
 
+![sreenshot urltoopen](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2019-10-47.png)
+
+
 Testez là d'abord : pour ceci il faut la copier dans la barre d'adresse du navigateur, si c'est la bonne elle devrait vous renvoyer la page sur laquelle vous étiez mais directement avec les bonnes cases remplies.
 
 
@@ -26,6 +29,9 @@ L'`$urltoparse` est la commande API qui va renvoyer des données au format JSON,
 1. aller sur l'onglet Network dans les Web Developer Tools affichés en bas de page, recharger la page et cliquer sur les bons critères, etc. A chaque fois que l'on sélectionne une nouvelle valeur pour un champ, une commande GET est envoyée. Vous pouvez les voir apparaitre dans l'onglet. Si vous ne voyez que des POST et pas de GET. Regarder la page (F5) et vous devriez les voir.
 2. prenez la dernière ligne de Method GET, apparue quand vous avez indiqués les bons critères pour vous. En cliquant dessus (simple clique) on obtient une URL de GET qui apparait sur la droite, du type `https://booking.keldoc.com/api/patients/v2/timetables/96875blablabblabla` longue et avec pleins de champs. Ces champs définissent les critères de date (début et fin) et agenda_ids, ça c'est un mystère ce que c'est pour moi mais ça bouge pas on peut les laisser hardcodés comme ça.
 3. Cette addresse est votre `$urltoparse`.
+
+![screenshot urltoparse](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2018-27-32.png)
+
 
 Pour la tester, entrer la une nouvelle fois dans votre barre d'adresse, Firefox devrait cette fois retourner un JSON formatté.
 
