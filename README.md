@@ -9,7 +9,7 @@ Avant le 1er lancement, il faut adapter 2 variables à l'intérieur du script à
 
 ## `$urltoopen`
 
-L'`$urltoopen` est la page qui sera ouverte automatiquement par le script, et devra vous permettre de réserver le créneau qui vient de se libérer le plus rapidement possible. Il m'est arrivé plusieurs fois qu'un nouveau rdv apparaisse, je valide, il faut alors sélectionner un 2eme rdv, mais aucune n'apparait. Ca m'est arrivé 3 fois avant d'avoir finalement sur une autre détection un 2eme rdv qui apparait. Ca doit etre un bug de leur système.
+L'`$urltoopen` est la page qui sera ouverte automatiquement par le script, et devra vous permettre de réserver le créneau qui vient de se libérer le plus rapidement possible. Il m'est arrivé plusieurs fois qu'un nouveau rdv apparaisse, je valide, il faut alors sélectionner un 2eme rdv, mais aucun créneau n'apparait pour ce 2eme rdv. Ca m'est arrivé plusieurs fois avant d'avoir finalement un 2eme rdv qui apparait. Probablement un bug de leur système.
 
 1. aller sur la page du centre voulu
 2. sélectionner "Catégorie de motif" puis ""Motif de consultation".
