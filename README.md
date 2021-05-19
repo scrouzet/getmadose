@@ -16,9 +16,6 @@ L'`$urltoopen` est la page qui sera ouverte automatiquement par le script, et de
 3. clique droit sur ce dernier -> This Frame -> View Frame Info (ceci n'apparait que si vous êtes dans le Web Developer Tools de Firefox)
 4. Dans l'onglet Général, copier l'Adresse, c'est votre `$urltoopen`
 
-![sreenshot urltoopen](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2019-10-47.png)
-
-
 Testez là d'abord : pour ceci il faut la copier dans la barre d'adresse du navigateur, si c'est la bonne elle devrait vous renvoyer la page sur laquelle vous étiez mais directement avec les bonnes cases remplies.
 
 
@@ -33,7 +30,8 @@ L'`$urltoparse` est la commande API qui va renvoyer des données au format JSON,
 ![screenshot urltoparse](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2018-27-32.png)
 
 
-Pour la tester, entrer la une nouvelle fois dans votre barre d'adresse, Firefox devrait cette fois retourner un JSON formatté.
+Pour la tester, entrer la une nouvelle fois dans votre barre d'adresse, Firefox devrait cette fois retourner un JSON formatté. Le résultat dans Firefox ressemble à ceci :
+![sreenshot urltoopen](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2019-10-47.png)
 
 ## Exemple pour le vaccinodrome de l'Ile du Ramier à Toulouse (par defaut ici dans le script) ça donne ça :
 
