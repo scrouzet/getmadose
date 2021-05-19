@@ -31,7 +31,7 @@ L'`$urltoparse` est la commande API qui va renvoyer des données au format JSON,
 
 
 Pour la tester, entrer la une nouvelle fois dans votre barre d'adresse, Firefox devrait cette fois retourner un JSON formatté. Le résultat dans Firefox ressemble à ceci :
-![sreenshot urltoopen](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2019-10-47.png)
+![sreenshot json](https://github.com/scrouzet/getmadose/blob/main/Screenshot%20from%202021-05-18%2019-10-47.png)
 
 ## Exemple pour le vaccinodrome de l'Ile du Ramier à Toulouse (par defaut ici dans le script) ça donne ça :
 
