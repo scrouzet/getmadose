@@ -9,7 +9,7 @@ Le script a 4 dépendances : curl, grep, xdg-open (open sous MacOS) et jq. Les 3
 
 *MacOS :* sensiblement la même chose, à part qu'il faut avoir au préalable installer le gestionnaire de paquet [Homebrew](https://brew.sh/index_fr) et utiliser ensuite la commande `brew install jq`.
 
-Le centre surveillé par défaut est celui de l'Ile du Ramier à Toulouse, pour le vaccin Moderna. Si vous souhaiter surveiller un autre centre/vaccin, il faut adapter 2 variables à l'intérieur du script à votre besoin précis : `$urltoparse` et `$urltoopen`. Les déterminer est de loin le plus pénible, il faut aller sur la page keldoc du centre et afficher dans les options de Firefox -> Web developer -> cocher Web developer Tools. Le raccourci pour les afficer est CTRL+SHIFT+I sur Linux (doit pas être très loin sur Mac) :
+Le centre surveillé par défaut est celui de l'Ile du Ramier à Toulouse, pour le vaccin Moderna. Si vous souhaitez surveiller un autre centre/vaccin, il faut adapter 2 variables à l'intérieur du script à votre besoin précis : `$urltoparse` et `$urltoopen`. Les déterminer est de loin le plus pénible, il faut aller sur la page keldoc du centre et afficher dans les options de Firefox -> Web developer -> cocher Web developer Tools. Le raccourci pour les afficer est CTRL+SHIFT+I sur Linux (doit pas être très loin sur Mac) :
 
 ## `$urltoopen`
 
