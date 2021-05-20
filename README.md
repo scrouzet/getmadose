@@ -1,11 +1,15 @@
 
 Le script `getmadose.sh` scanne chaque 2 sec la page keldoc d'un centre de vaccination et ouvrira la page approprié dans votre navigateur dès qu'un nouveau rdv est détecté.
 
-Pour l'utiliser il faut le télécharger, aller dans le répertoire, puis lancer `sh getmadose.sh`
+Pour l'utiliser il faut le télécharger (cliquer sur CODE -> Download ZIP), dézipper le dossier, aller dans le répertoire avec le terminal, puis lancer `sh getmadose.sh`
 
-Le script a 4 dépendances : curl, grep, xdg-open et jq. Les 3 premières sont par défaut sur Ubuntu, la dernière peut etre installer via `sudo apt install jq` en quelques secondes. Sur Mac, c'est sensiblement la même chose, à part que pour installer jq il faut avoir le gestionnaire de paquet Homebrew installé et utiliser la commande `brew install jq`.
+Le script a 4 dépendances : curl, grep, xdg-open (open sous MacOS) et jq. Les 3 premières sont présentes par défaut sur Linux et MacOS. jq peut être installé simplement selon votre système.
 
-Avant le 1er lancement, il faut adapter 2 variables à l'intérieur du script à votre besoin précis (i.e. si vous n'habitez pas à Toulouse ou souhaiter surveiller un autre centre que celui de l'Ile du Ramier pour le vaccin Moderna) : `$urltoparse` et `$urltoopen`. Les déterminer est de loin le plus pénible, il faut aller sur la page keldoc du centre et afficher dans les options de Firefox -> Web developer -> cocher Web developer Tools. Le raccourci pour les afficer est CTRL+SHIFT+I sur Linux (doit pas être très loin sur Mac) :
+*GNU/Linux :* `sudo apt install jq` dans le terminal.
+
+*MacOS :* sensiblement la même chose, à part qu'il faut avoir au préalable installer le gestionnaire de paquet [Homebrew](https://brew.sh/index_fr) et utiliser ensuite la commande `brew install jq`.
+
+Le centre surveillé par défaut est celui de l'Ile du Ramier à Toulouse, pour le vaccin Moderna. Si vous souhaiter surveiller un autre centre/vaccin, il faut adapter 2 variables à l'intérieur du script à votre besoin précis : `$urltoparse` et `$urltoopen`. Les déterminer est de loin le plus pénible, il faut aller sur la page keldoc du centre et afficher dans les options de Firefox -> Web developer -> cocher Web developer Tools. Le raccourci pour les afficer est CTRL+SHIFT+I sur Linux (doit pas être très loin sur Mac) :
 
 ## `$urltoopen`
 
