@@ -5,11 +5,13 @@ Pour l'utiliser il faut le télécharger (cliquer sur CODE -> Download ZIP), dé
 
 Le script a 4 dépendances : curl, grep, xdg-open (open sous MacOS) et jq. Les 3 premières sont présentes par défaut sur Linux et MacOS. jq peut être installé simplement selon votre système.
 
-*GNU/Linux :* `sudo apt install jq` dans le terminal.
+**GNU/Linux :** `sudo apt install jq` dans le terminal.
 
-*MacOS :* sensiblement la même chose, à part qu'il faut avoir au préalable installer le gestionnaire de paquet [Homebrew](https://brew.sh/index_fr) et utiliser ensuite la commande `brew install jq`.
+**MacOS :** sensiblement la même chose, à part qu'il faut avoir au préalable installer le gestionnaire de paquet [Homebrew](https://brew.sh/index_fr) et utiliser ensuite la commande `brew install jq`.
 
-Le centre surveillé par défaut est celui de l'Ile du Ramier à Toulouse, pour le vaccin Moderna. Si vous souhaitez surveiller un autre centre/vaccin, il faut adapter 2 variables à l'intérieur du script à votre besoin précis : `$urltoparse` et `$urltoopen`. Les déterminer est de loin le plus pénible, il faut aller sur la page keldoc du centre et afficher dans les options de Firefox -> Web developer -> cocher Web developer Tools. Le raccourci pour les afficer est CTRL+SHIFT+I sur Linux (doit pas être très loin sur Mac) :
+Le centre surveillé par défaut est celui de l'**Ile du Ramier à Toulouse, pour le vaccin Moderna**. Si cela vous convient alors vous n'avez rien d'autre à faire que lancer le script et le laisser tourner en tâche de fond en attendant qu'il ouvre une page avec un créneau quand il y en aura un de disponible. Vous pouvez vous arrêter de lire ici.
+
+Si par contre vous souhaitez surveiller un autre centre/vaccin, il faut adapter 2 variables à l'intérieur du script à votre besoin précis : `$urltoparse` et `$urltoopen`. Les déterminer est de loin le plus pénible, il faut aller sur la page keldoc du centre et afficher dans les options de Firefox -> Web developer -> cocher Web developer Tools. Le raccourci pour les afficer est CTRL+SHIFT+I sur Linux (doit pas être très loin sur Mac) :
 
 ## `$urltoopen`
 
